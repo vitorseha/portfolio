@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import Hero from './pages/Hero';
