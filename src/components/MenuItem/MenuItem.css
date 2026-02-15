@@ -1,0 +1,44 @@
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.icon-container:hover {
+    background-color: #a59fa41a;
+}
+
+.icon-icon{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.icon-icon, .icon-title {
+    color: #a59fa4;
+}
+
+.icon-title {
+    font-size: 12px;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+.icon-container:hover .icon-icon,
+.icon-container:hover .icon-title {
+  color: #948e93;
+}
+
+.icon-container:active .icon-icon,
+.icon-container:active .icon-title {
+  color: #4f46e5;
+  transition: color 0.3s ease;
+}
