@@ -1,11 +1,14 @@
 import React from 'react'
 import styles from './ProjectCard.module.css'
 
-const ProjectCard = ({ title, backgroundImage, category }) => {
+const ProjectCard = ({ title, backgroundImage, backgroundColor, category }) => {
   return (
     <div
       className={styles.card}
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{
+        backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
+        backgroundColor: backgroundColor || 'transparent'
+      }}
     >
       <div className={styles.overlay}>
         <h3>{title}</h3>
