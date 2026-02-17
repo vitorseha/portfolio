@@ -1,0 +1,216 @@
+.card {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px #ccc solid;
+  padding: 15px;
+  width: 30%;
+}
+
+/* ---------- TEXT ---------- */
+
+.title,
+.containerTitle {
+  color: #2A2529;
+}
+
+.title {
+  font-weight: 800;
+}
+
+.containerTitle {
+  font-weight: 600;
+}
+
+.containerDescription {
+  font-size: 14px;
+  color: #a59fa4;
+}
+
+/* ---------- LAYOUT ---------- */
+
+.shareContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-width: 100vw;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.escContainer {
+  display: flex;
+  align-items: center;
+}
+
+.esc {
+  font-size: 10px;
+  color: #948e93;
+  background-color: #a59fa41a;
+  padding: 4px;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: default;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #a59fa41a;
+  margin: 10px 0px;
+  justify-content: space-between;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+}
+
+.containerIcon {
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 10px;
+  background-color: white;
+  color: #a59fa4;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+
+/* ---------- SWITCH CORRIGIDO ---------- */
+
+.switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  transition: 0.3s;
+  border-radius: 24px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  top: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: #4f46e5;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* ---------- LINK ---------- */
+
+.linkPathContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linkPath {
+  color: #a59fa4;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.icon {
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  color: #a59fa4;
+}
+
+.icon:hover {
+  background-color: #a59fa41a;
+  color: #948e93;
+}
+
+/* ---------- SEARCH ---------- */
+
+.invite {
+  font-weight: 400;
+  color: #2A2529;
+  margin: 15px 0px 10px 0;
+}
+
+.searchBar {
+  display: flex;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputSearchBar {
+  margin: 0px 10px;
+  outline: none;
+  border: none;
+  color: #2A2529;
+  font-size: 14px;
+  width: 100%;
+}
+
+.inviteButton {
+  position: relative;
+  background: #a59fa41a;
+  border: none;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* underline */
+.inviteButton::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4f46e5;
+  transition: width 0.3s ease;
+}
+
+/* hover */
+.inviteButton:hover::after {
+  width: 100%;
+}
+
+/* opcional: leve feedback no hover */
+.inviteButton:hover {
+  opacity: 0.95;
+  color: #4f46e5;
+}
+
+.inviteButton:active {
+  opacity: 0.95;
+  color: white;
+  background-color: #4f46e5;
+}

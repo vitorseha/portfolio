@@ -8,16 +8,21 @@ const Motion = () => {
     <section id="motion">
       <div className={styles.grid}>
 
-        <ProjectCard
-          title="E-commerce Platform"
-          category="frontend"
-          backgroundImage="/images/project1.jpg"
-        />
+        <Link to="/project/share-component" target="_blank" rel="noopener noreferrer">
+          <ProjectCard
+            title="share component"
+            category="frontend"
+            backgroundColor="#2a2529"
+            />
+          </Link>
 
-        <ProjectCard
-          title="Real Estate Landing Page"
-          backgroundImage="/images/project2.jpg"
-        />
+        <Link to="/project/menu-overlay" target="_blank" rel="noopener noreferrer">
+          <ProjectCard
+            title="orverlay menu"
+            category="frontend"
+            backgroundColor="#2a2529"
+            />
+        </Link>
 
         <Link to="https://www.figma.com/design/tJm8vUadrzX3apAENGyVPe/Design-System?node-id=0-1&t=qGNY1NEy0P43sEqY-1" target="_blank" rel="noopener noreferrer">
           <ProjectCard

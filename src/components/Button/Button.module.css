@@ -3,7 +3,6 @@
   font-family: var(--font-family-base);
   font-size: var(--font-size-sm);
   border: none;
-  border-radius: 10px;
   padding: 10px 25px;
   cursor: pointer;
   transition: all 0.3s ease, transform 0.1s ease;

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Design.module.css'
 import Button from '../components/Button/Button'
+import qrWpp from '../assets/qrWhatsapp.svg';
 
 const Design = () => {
 
@@ -136,7 +137,7 @@ ${formData.message}
               {contactType === "whatsapp" && (
                 <div className={styles.whatsappContainer}>
                   <img
-                    src="/qrwpp.jpeg"
+                    src={qrWpp}
                     alt="WhatsApp QR Code"
                     className={styles.whatsappImage}
                     draggable="false"

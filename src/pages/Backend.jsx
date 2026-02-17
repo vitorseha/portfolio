@@ -3,6 +3,12 @@ import Button from '../components/Button/Button'
 import styles from './Backend.module.css'
 
 const Backend = () => {
+
+  const handleClick = () => {
+    const section = document.getElementById("motion")
+    section?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <section id="backend" aria-labelledby="backend-title">
       <div className={styles.container}>
@@ -24,6 +30,7 @@ const Backend = () => {
           <Button
             icon={<i className="bi bi-arrow-right" />}
             variant="transparent"
+            onClick={handleClick}
           >
             See projects
           </Button>
