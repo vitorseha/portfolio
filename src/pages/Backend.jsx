@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../components/Button/Button'
 import styles from './Backend.module.css'
+import Imagem from '../assets/profile.png';
 
 const Backend = () => {
 
@@ -14,7 +15,12 @@ const Backend = () => {
       <div className={styles.container}>
 
         <div className={styles.image}>
-          {'<imagem>'}
+           <img
+              className={styles.img}
+              src={Imagem}
+              alt="A man holding a component card simulating your profile."
+              draggable="false"
+            />
         </div>
 
         <div className={styles.content}>

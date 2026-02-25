@@ -39,28 +39,28 @@ const NavigationBar = () => {
         />
 
         <NavigationItem
-          navicon={<i className="bi bi-code-slash"></i>}
+          navicon={<i className="bi bi-info-circle"></i>}
           label="Info"
           targetId="backend"
           isActive={activeSection === "backend"}
         />
 
         <NavigationItem
-          navicon={<i className="bi bi-text-indent-left"></i>}
+          navicon={<i className="bi bi-gear-wide-connected"></i>}
           label="Tools"
           targetId="frontend"
           isActive={activeSection === "frontend"}
         />
 
         <NavigationItem
-          navicon={<i className="bi bi-medium"></i>}
+          navicon={<i className="bi bi-archive"></i>}
           label="Projects"
           targetId="motion"
           isActive={activeSection === "motion"}
         />
 
         <NavigationItem
-          navicon={<i className="bi bi-spellcheck"></i>}
+          navicon={<i className="bi bi-envelope-at"></i>}
           label="Contact"
           targetId="design"
           isActive={activeSection === "design"}
